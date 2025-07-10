@@ -20,7 +20,10 @@ An interactive and user-friendly Quiz Game Application built using HTML, CSS, an
 ✅ Easy to expand – add more questions or question types (single select, multi select, fill in the blanks, etc.)
 
 🛠️ Tech Stack
+
 HTML – Structure
+
 CSS – Styling and layout
+
 JavaScript – Logic, DOM manipulation, scoring system
 
