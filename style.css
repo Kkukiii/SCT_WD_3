@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Setup */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Quiz Card */
+.quiz-section {
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  padding: 40px 35px;
+  width: 100%;
+  max-width: 600px;
+  animation: slideUp 0.5s ease;
+  position: relative;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Header */
+#quiz h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Separator */
+hr {
+  border: none;
+  height: 2px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+/* Option List */
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f5f9ff;
+  padding: 10px 15px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+}
+
+li:hover {
+  background: #e6f0ff;
+  border-color: #8ec5fc;
+  box-shadow: 0 0 8px rgba(142, 197, 252, 0.3);
+}
+
+input[type="radio"] {
+  accent-color: #3498db;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+label {
+  font-size: 17px;
+  color: #34495e;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Submit Button */
+.btn {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#submit {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  font-size: 16px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+}
+
+#submit:hover {
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+  box-shadow: 0 4px 20px rgba(0, 242, 254, 0.5);
+}
+
+/* Result Message (optional) */
+#result {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .quiz-section {
+    padding: 25px 20px;
+  }
+
+  #quiz h2 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  #submit {
+    padding: 10px 24px;
+    font-size: 15px;
+  }
+}
