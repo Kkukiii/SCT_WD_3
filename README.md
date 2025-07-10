@@ -4,6 +4,7 @@
 An interactive and user-friendly Quiz Game Application built using HTML, CSS, and JavaScript. This project allows users to answer multiple-choice questions and receive a score at the end. It helps strengthen core frontend skills such as DOM manipulation, event handling, dynamic rendering, and logic implementation.
 
 📌 Features
+
 ✅ Multiple-choice quiz system
 
 ✅ Displays one question at a time with 4 options
